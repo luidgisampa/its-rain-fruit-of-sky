@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="libraries/p5.js"></script>
+  <script src="libraries/p5.dom.min.js"></script>
+  <script src="libraries/p5.play.js"></script>
+
+  <script src="js/form.js"></script>
+  <!--Link game.js e player.js-->
+  <script src="js/game.js"></script>
+  <script src="js/player.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+
+  <!--Adicione configuração do banco de dados abaixo-->
+  <script>
+    
+    const firebaseConfig = {
+  apiKey: "AIzaSyBibCMNa0TsveIrZCBFJ1I5BRiPM8EkT9c",
+  authDomain: "apanhador-de-frutas-2691a.firebaseapp.com",
+  databaseURL: "https://apanhador-de-frutas-2691a-default-rtdb.firebaseio.com",
+  projectId: "apanhador-de-frutas-2691a",
+  storageBucket: "apanhador-de-frutas-2691a.appspot.com",
+  messagingSenderId: "107966586684",
+  appId: "1:107966586684:web:676c21f5b0f1bb5eb28839"
+};
+
+    firebase.initializeApp(firebaseConfig); 
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+  <script src="sketch.js"></script>
+</body>
+
+</html>
